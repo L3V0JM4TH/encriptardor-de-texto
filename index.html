@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Encabezado de la UI -->
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Alura logo">
+    </header>
+    <!-- Cuerpo principal de la UI-->
+    <main class="contenido__principal">
+
+        <!-- Seccion 1: Area de texto sin encriptar -->
+        <section class="contenido_principal_seccion1">
+            <textarea class="contenido__principal__textArea1" placeholder="Ingrese el texto aqui" rows="40" cols="50"
+                autofocus required></textarea>
+            <div>
+                <h4 class="Contenido__principal__info">&#128712; Solo letras minúsculas y sin acentos</h4>
+            </div>
+            <div class="contenido__principal__botones">
+                <button class="contenido__principal__btnEncriptar" onclick="btnEncriptar();"> Encriptar</button>
+                <button class="contenido__principal__btnDesencriptar" onclick="btnDesEncriptar();">
+                    Desencriptar</button>
+            </div>
+        </section>
+
+        <!-- Seccion 2: Area de texto encriptado y para copiar -->
+        <section class="contenido_principal_seccion2">
+            <textarea class="contenido__principal__textArea2" rows="40" cols="50"></textarea>
+            <div>
+                <button class="contenido__principal__btnCopiar" onclick="btnCopiar();"> Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- pie de la UI -->
+
+    <footer>
+        <p> Datos sobre el desarrollador</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
