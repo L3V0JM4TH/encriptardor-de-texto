@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-fondo: #F3F5FC;
+    --color-fondo2: #0A3871;
+    --color-fondo-txt-encriptado : #FFFFFF;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+/* clase que representa el Logo de alura latam */
+.logo{
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+/* clase que contiene el estilo del main principal */
+.contenido__principal {
+    display: flex;
+}
+
+/* Clase que representa la seccion 1 (Area de texto sin encriptar, boton encriptar, boton desencriptar. */
+.contenido_principal_seccion1{
+    margin-top: 168px;
+    margin-left: 240px;
+    margin-bottom: 808px;
+}
+
+/* Clase que representa el area de texto donde se ingresa el texto a encriptar */
+.contenido__principal__textArea1{
+    width: 680px;
+    height: 685px;
+    color: var(--color-fondo2);
+    font-size: 32px;
+    text-transform: lowercase;
+    border: none;
+}
+
+::placeholder{ color: var(--color-fondo2);}
+
+.contenido__principal__textArea1:focus{
+    outline: none;
+}
+
+/* Clase que representa la seccion 2 (area de texto encriptado, boton copiar */
+.contenido_principal_seccion2{
+    width: 400px;
+    height: 944px;
+    margin-top: 40px;
+    margin-left: 183px;
+    margin-bottom: 40px;
+    border-radius: 32px;
+    box-sizing: border-box;
+    box-shadow: 0px 28px 32px -5px gray;
+}
+
+/* Clase que representa el area de texto donde se va a mostrar el texto a encriptado*/
+.contenido__principal__textArea2{
+    width: 336px;
+    height: 781px;
+    background-image: url("../assets/avatar.png");
+    background-repeat: no-repeat;
+    background-size: 336px 944px;
+    border: none;
+    color: #495057;
+    font-size: 24px;
+    text-transform: lowercase;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    margin-bottom: 32px;
+}
+
+.contenido__principal__textArea2:focus{
+    outline: none;
+}
+
+/* Clase que representa el mensaje de informacion "Solo letras minusculas y sin acentos" */
+.Contenido__principal__info{
+    color: #495057;
+    font-size: 12px;
+}
+
+/* Clase que representa el contenedor de los botones */
+
+.contenido__principal__botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.contenido__principal__btnEncriptar{
+    background-color: var(--color-fondo2);
+    border: 1px solid var(--color-fondo2);
+    border-radius: 24px;
+    color: var(--color-fondo-txt-encriptado);
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+}
+
+.contenido__principal__btnDesencriptar{
+    background: #D8DFE8;
+    border: 1px solid var(--color-fondo2);
+    border-radius: 24px;
+    color: var(--color-fondo2);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+    font-size: 16px;
+}
+
+.contenido__principal__btnCopiar{
+    border: 1px solid var(--color-fondo2);
+    border-radius: 24px;
+    color: var(--color-fondo2);
+    cursor: pointer;
+    width: 336px;
+    height: 67px;
+    font-size: 16px;
+    margin-left: 32px;
+    display: none;
+}
